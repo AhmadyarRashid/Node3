@@ -1,17 +1,6 @@
-const fs = require('fs');
+const getNotes = require('./notes.js');
+const add = require('./utils.js');
 
-// fs.writeFile('note.txt' , 'my name is ahmad' , err => {
-//     if(err){
-//         console.log('error occur on write data in file');
-//         return;
-//     }
-//     console.log('File update sucessfully');
-// });
+console.log(add(2,45));
 
-
-fs.appendFile('note.txt' , 'i work in tecsob' , err => {
-    if(err){
-        return;
-    }
-    console.log('Data Append Sucessfully');
-});
+console.log(getNotes());
